@@ -44,7 +44,10 @@ for item in items:
 
 	item['name'] = re.sub('[\W]+',' ', item['name']).strip()
 	for col in cols:
-		row.append(item[col])
+		if col in item:
+			row.append(item[col])
+		else:
+			row.append("")
 
 	result.append(row)
 

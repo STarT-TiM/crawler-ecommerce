@@ -1,7 +1,9 @@
 affiliate_ecommerce
+### Setup
+copy file config.json from file config.example.json
 
 ### map product shoppe list
-
+```
 item_id	itemid
 name	name
 description	--> in details
@@ -19,3 +21,23 @@ category_id	catid
 shop_id	shopid
 images --> in details
 
+```
+
+### map shop
+
+```
+id
+shop_id	shopid
+description	description
+status status
+place place
+shop_location shop_location
+item_count item_count
+rating_star rating_star
+rating_good rating_good
+rating_bad rating_bad
+follower_count follower_count
+user_id userid
+account_id account.username
+create_time ctime
+```

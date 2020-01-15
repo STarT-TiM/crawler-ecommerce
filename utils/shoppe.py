@@ -26,3 +26,12 @@ def getProduct(category_id, limit):
     response = requests.get('https://shopee.vn/api/v2/search_items/', headers=headers, params=params)
 
     return json.loads(response.text)
+
+def getShop(shop_id):
+    params = (
+        ('shopid', shop_id),
+    )
+
+    response = requests.get('https://shopee.vn/api/v2/shop/get', headers=headers, params=params)
+
+    return json.loads(response.text)
